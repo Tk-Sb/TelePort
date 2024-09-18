@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-text{
+    @apply text-[36px] md:text-[42px] lg:text-[48px] font-bold ;
+}
+
+.subheader-text{
+    @apply text-[16px] md:text-[18px] lg:text-[20px] ;
+}
