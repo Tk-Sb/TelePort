@@ -16,7 +16,7 @@ export default function AnimatedBeam() {
 
   return (
     <div
-      className="relative flex h-[340px] w-full items-start justify-center overflow-hidden rounded-lg bg-transparent"
+      className="relative flex h-[340px] w-full items-start justify-center overflow-hidden"
       ref={containerRef}
     >
       <div className="flex size-full flex-col max-w-[1000px] max-h-[200px] items-stretch justify-between gap-[58px]">
@@ -104,7 +104,7 @@ const Circle = forwardRef(function Circle({ className, children }, ref) {
   return (
     <div
       ref={ref}
-      className={`z-10 flex size-[75px] md:size-28 items-center justify-center rounded-full border-2 bg-white p-[12px] shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] ${className}`}
+      className={`z-10 flex size-[75px] items-center justify-center rounded-full border-2 bg-white p-[12px] shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] ${className}`}
     >
       {children}
     </div>
@@ -202,7 +202,7 @@ const Icons = {
   ),
   rive: () => (
     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M25 43.75V18.75H12.5V31.25L25 43.75Z" fill="black" fill-opacity="0.5"/>
+<path d="M25 43.75V18.75H12.5V31.25L25 43.75Z" fill="black" fillOpacity="0.5"/>
 <path d="M37.5 18.75V6.25H12.5L25 18.75H12.5V31.25H37.5L25 18.75H37.5Z" fill="black"/>
 </svg>
 
