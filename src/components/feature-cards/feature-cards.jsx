@@ -18,7 +18,7 @@ export default function FeatureCards() {
         <GridFeaturesCards cards={cards} autoplay={false} ></GridFeaturesCards>
       </div>
       <div className="h-fit flex md:hidden">
-        <SwipeCarousel cards={cards} autoplay={false}></SwipeCarousel>
+        <SwipeCarousel cards={cards} autoplay={true}></SwipeCarousel>
       </div>
     </>
   )
