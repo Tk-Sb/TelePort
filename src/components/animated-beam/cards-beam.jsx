@@ -1,7 +1,7 @@
 "use client";
 
 import CustomBeamEffect from "@/components/animated-beam/custom-beam-effect";
-import React, { forwardRef, useRef } from "react";
+import { forwardRef, useRef } from "react";
 
 export default function CardsBeam() {
   const containerRef = useRef(null);
@@ -88,7 +88,7 @@ const Frame = forwardRef(function Frame({ children }, ref) {
   );
 });
 
-const PlaceHolder = () => {
+function PlaceHolder () {
   return(
     <div>
 
