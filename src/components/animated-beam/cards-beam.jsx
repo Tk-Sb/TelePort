@@ -8,6 +8,7 @@ export default function CardsBeam() {
   const div1Ref = useRef(null);
   const div2Ref = useRef(null);
   const div3Ref = useRef(null);
+  const div4Ref = useRef(null);
 
   return (
     <div
@@ -27,6 +28,10 @@ export default function CardsBeam() {
           <div className="flex flex-row justify-between">
             <Frame ref={div3Ref}></Frame>
             <PlaceHolder></PlaceHolder>
+          </div>
+          <div className="flex flex-row justify-between">
+            <PlaceHolder></PlaceHolder>
+            <Frame ref={div4Ref}></Frame>
           </div>
         </div>
       </div>
@@ -54,6 +59,19 @@ export default function CardsBeam() {
         endXOffset={0}
         endYOffset={-150}
         reverse={true}
+      />
+      <CustomBeamEffect
+        duration={3}
+        delay={1}
+        containerRef={containerRef}
+        fromRef={div3Ref}
+        toRef={div4Ref}
+        curvature={-25}
+        startXOffset={75}
+        startYOffset={75}
+        endXOffset={0}
+        endYOffset={-150}
+        reverse={false}
       />
     </div>
   );
