@@ -125,7 +125,7 @@ const Icons = {
   TP: () => (
     <div
     style={{ WebkitTextStroke: '3px black'}}
-    className=" font-[Rubik] text-[38px] font-extrabold leading-[40px] text-[#F2CD88]">
+    className="text-[38px] font-extrabold leading-[40px] text-[#F2CD88]">
       TP
     </div>
   ),
