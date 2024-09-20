@@ -1,13 +1,13 @@
-import FeatureCards from "@/components/feature-cards/feature-cards";
+import CardsBeam from "@/components/animated-beam/cards-beam";
 
 export default function page() {
   return (
     <>
-      <div className="flex justify-center px-[10px] bg-blue-200">
-        <div className="w-full flex justify-center bg-blue-100">
-          <FeatureCards></FeatureCards>
-        </div>
-      </div>
+      <main className="p-[10px] ">
+        <section className="p-[15px] bg-white ">
+          <CardsBeam></CardsBeam>
+        </section>
+      </main>
     </>
   )
 }

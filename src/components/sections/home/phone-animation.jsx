@@ -62,12 +62,12 @@ function Screen () {
         ort
       </div>
 
-      <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-2 lg:mx-6 text-sm font-medium text-violet-500 backdrop-blur">
+      <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-2 text-sm font-medium text-violet-500 backdrop-blur">
         Get Started
       </button>
 
       {/* <div className="absolute -left-32 -top-32 h-64 w-64 rounded-full bg-violet-500" /> */}
-      <div className="absolute -bottom-72 lg:-bottom-64 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-violet-500" />
+      <div className="absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full bg-violet-500" />
     </div>
   );
 };

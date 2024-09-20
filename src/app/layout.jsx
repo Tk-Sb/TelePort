@@ -1,7 +1,7 @@
 import { Rubik } from "next/font/google";
 import "./globals.css";
 
-const rubik = Rubik({ subsets: ["arabic"] })
+const rubik = Rubik({ subsets: ["arabic"], weight: ["400", "700"] })
 
 export const metadata = {
   title: "Create Next App",
