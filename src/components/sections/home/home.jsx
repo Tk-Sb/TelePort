@@ -1,12 +1,11 @@
 import PhoneAnimation from "../home/phone-animation";
 import BoxReveal from "../../text-reveal";
+import GridNav from "@/components/grid-nav";
 
 export default function Home() {
   return (
-    <section className="flex">
-      <nav className="flex-grow hidden lg:block bg-gray-200 ">
-
-      </nav>
+    <section className="flex gap-[25px] ">
+      <GridNav></GridNav>
       <div dir="rtl" className="w-full h-fit lg:max-w-[784px] flex flex-wrap md:justify-between gap-[25px] bg-[#FBFBFB] rounded-[20px] px-[15px] py-[25px] md:px-[50px] md:py-[50px] ">
         <div className="w-fit h-fit flex flex-col gap-[25px] ">
           <div className="w-full h-fit flex flex-col gap-[10px] ">

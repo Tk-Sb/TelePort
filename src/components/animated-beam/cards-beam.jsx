@@ -81,7 +81,7 @@ const Frame = forwardRef(function Frame({ children }, ref) {
   return (
     <div
       ref={ref}
-      className="z-10 w-[150px] h-[300px] rounded-[10px] bg-slate-400 opacity-35 "
+      className="z-10 w-[150px] h-[300px] md:w-[250px] md:h-[500px] rounded-[10px] bg-slate-400 opacity-35 "
     >
       {children}
     </div>

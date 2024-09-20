@@ -26,7 +26,7 @@ export default function Works() {
               </h2>
             </div>
           </div>
-          <div dir="ltr" className="w-full h-fit flex justify-center md:w-fit ">
+          <div dir="ltr" className="w-full h-fit flex justify-center ">
             <CardsBeam></CardsBeam>
           </div>
         </div>
