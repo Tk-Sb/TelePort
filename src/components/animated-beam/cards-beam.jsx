@@ -22,7 +22,7 @@ export default function CardsBeam() {
       <div className="flex h-full w-full flex-col items-stretch justify-between gap-10">
         <div className="flex flex-col gap-[15px] ">
           <div className="flex flex-row justify-between">
-            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:w-[250px] md:h-[500px]'}>
+            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:rounded-[40px] md:w-[255px] md:h-[510px]'}>
             <Frame ref={div1Ref}>
               <Iphone15Pro
                   className="w-full h-fit rounded-[30px]"
@@ -34,7 +34,7 @@ export default function CardsBeam() {
           </div>
           <div className="flex flex-row justify-between">
             <PlaceHolder></PlaceHolder>
-            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:w-[250px] md:h-[500px]'}>
+            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:rounded-[40px] md:w-[255px] md:h-[510px]'}>
             <Frame ref={div2Ref}>
               <Iphone15Pro
                   className="w-full h-fit rounded-[30px]"
@@ -44,7 +44,7 @@ export default function CardsBeam() {
             </HoverCard>
           </div>
           <div className="flex flex-row justify-between">
-          <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:w-[250px] md:h-[500px]'}>
+          <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:rounded-[40px] md:w-[255px] md:h-[510px]'}>
             <Frame ref={div3Ref}>
               <Iphone15Pro
                   className="w-full h-fit rounded-[30px]"
@@ -56,7 +56,7 @@ export default function CardsBeam() {
           </div>
           <div className="flex flex-row justify-between">
             <PlaceHolder></PlaceHolder>
-            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:w-[250px] md:h-[500px]'}>
+            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:rounded-[40px] md:w-[255px] md:h-[510px]'}>
             <Frame ref={div4Ref}>
               <Iphone15Pro
                   className="w-full h-fit rounded-[30px]"
