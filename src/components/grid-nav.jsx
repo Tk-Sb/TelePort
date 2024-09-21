@@ -2,7 +2,7 @@
 
 export default function GridNav() {
   return (
-    <div className="hidden lg:flex flex-col justify-center items-center gap-[10px] flex-wrap flex-grow bg-[#8B5CF6] rounded-[20px] p-[10px]">
+    <div className="min-w-[437px] hidden lg:flex flex-col justify-center items-center gap-[10px] flex-wrap flex-grow bg-[#8B5CF6] rounded-[20px] p-[10px]">
       <div className="flex flex-grow w-full gap-[10px] h-[55%]"> {/*!!!*/}
         <div className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between  flex-grow w-[30%] transform-gpu duration-300 hover:-translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px]">
           <p dir="rtl" className="text-[#FFFFFF80]">
