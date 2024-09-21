@@ -1,5 +1,6 @@
 import Home from "@/components/sections/home/home";
 import Services from "@/components/sections/services/services";
+import Tools from "@/components/sections/tools/tools";
 import Works from "@/components/sections/works/works";
 
 export default function page() {
@@ -9,6 +10,7 @@ export default function page() {
         <Home></Home>
         <Services></Services>
         <Works></Works>
+        <Tools></Tools>
       </main>
     </>
   )

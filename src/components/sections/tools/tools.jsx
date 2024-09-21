@@ -1,11 +1,12 @@
-import FeatureCards from "@/components/feature-cards/feature-cards";
+import AnimatedBeam from "@/components/animated-beam/animated-beam";
 import BoxReveal from "@/components/text-reveal";
 
-export default function Services() {
+
+export default function Tools() {
   return (
     <>
       <section className="flex">
-        <div className="w-full h-fit flex flex-col gap-[25px] bg-[#FBFBFB] rounded-[20px] px-[15px] py-[25px] ">
+      <div className="w-full h-fit flex flex-col gap-[25px] bg-[#FBFBFB] rounded-[20px] px-[15px] py-[25px] ">
           <div className="w-full h-fit flex flex-col gap-[10px] ">
             <h1 dir="rtl" className="header-text ">
               <BoxReveal boxColor={"#F2CD88"} duration={0.5}>
@@ -28,7 +29,7 @@ export default function Services() {
             </h2>
           </div>
           <div className="w-full flex justify-center ">
-            <FeatureCards></FeatureCards>
+            <AnimatedBeam></AnimatedBeam>
           </div>
         </div>
       </section>
