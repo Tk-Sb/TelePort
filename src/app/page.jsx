@@ -1,3 +1,4 @@
+import ContactUs from "@/components/sections/contact-us/contact-us";
 import Home from "@/components/sections/home/home";
 import Services from "@/components/sections/services/services";
 import Tools from "@/components/sections/tools/tools";
@@ -11,6 +12,7 @@ export default function page() {
         <Services></Services>
         <Works></Works>
         <Tools></Tools>
+        <ContactUs></ContactUs>
       </main>
     </>
   )

@@ -16,7 +16,7 @@ export default function AnimatedBeam() {
 
   return (
     <div
-      className="relative flex h-[340px] w-full items-start justify-center overflow-hidden"
+      className="relative flex h-[340px] w-full items-start justify-center "
       ref={containerRef}
     >
       <div className="flex size-full flex-col max-w-[1000px] max-h-[200px] items-stretch justify-between gap-[58px]">
@@ -123,8 +123,9 @@ const Icons = {
   ),
   TP: () => (
     <div
-    style={{ WebkitTextStroke: '3px black'}}
-    className="text-[38px] font-extrabold leading-[40px] text-[#F2CD88]">
+      style={{ WebkitTextStroke: '3px black'}}
+      className="text-[38px] font-extrabold leading-[40px] text-[#F2CD88] select-none "
+      >
       TP
     </div>
   ),
