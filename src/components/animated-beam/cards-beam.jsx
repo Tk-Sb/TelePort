@@ -5,6 +5,7 @@ import { forwardRef, useRef } from "react";
 import HoverCard from "../hoverCard-3d";
 
 import Image from 'next/image';
+import Iphone15Pro from "../iphone-15-pro";
 
 export default function CardsBeam() {
   const containerRef = useRef(null);
@@ -21,12 +22,11 @@ export default function CardsBeam() {
       <div className="flex h-full w-full flex-col items-stretch justify-between gap-10">
         <div className="flex flex-col gap-[15px] ">
           <div className="flex flex-row justify-between">
-            <HoverCard className={'w-[150px] h-[300px] md:w-[250px] md:h-[500px]'}>
+            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:w-[250px] md:h-[500px]'}>
             <Frame ref={div1Ref}>
-              <Image 
-              src="/images/image.png"
-              alt="image"
-              fill
+              <Iphone15Pro
+                  className="w-full h-fit rounded-[30px]"
+                      src="/images/image.png"
               />
             </Frame>
             </HoverCard>
@@ -34,23 +34,21 @@ export default function CardsBeam() {
           </div>
           <div className="flex flex-row justify-between">
             <PlaceHolder></PlaceHolder>
-            <HoverCard className={'w-[150px] h-[300px] md:w-[250px] md:h-[500px]'}>
+            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:w-[250px] md:h-[500px]'}>
             <Frame ref={div2Ref}>
-              <Image 
-              src="/images/image.png"
-              alt="image"
-              fill
+              <Iphone15Pro
+                  className="w-full h-fit rounded-[30px]"
+                      src="/images/image.png"
               />
             </Frame>
             </HoverCard>
           </div>
           <div className="flex flex-row justify-between">
-            <HoverCard className={'w-[150px] h-[300px] md:w-[250px] md:h-[500px]'}>
+          <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:w-[250px] md:h-[500px]'}>
             <Frame ref={div3Ref}>
-              <Image 
-              src="/images/image.png"
-              alt="image"
-              fill
+              <Iphone15Pro
+                  className="w-full h-fit rounded-[30px]"
+                      src="/images/image.png"
               />
             </Frame>
             </HoverCard>
@@ -58,12 +56,11 @@ export default function CardsBeam() {
           </div>
           <div className="flex flex-row justify-between">
             <PlaceHolder></PlaceHolder>
-            <HoverCard className={'w-[150px] h-[300px] md:w-[250px] md:h-[500px]'}>
+            <HoverCard className={'h-[305px] w-[150px] rounded-[30px] bg-slate-400 md:w-[250px] md:h-[500px]'}>
             <Frame ref={div4Ref}>
-              <Image 
-              src="/images/image.png"
-              alt="image"
-              fill
+              <Iphone15Pro
+                  className="w-full h-fit rounded-[30px]"
+                      src="/images/image.png"
               />
             </Frame>
             </HoverCard>
@@ -116,7 +113,7 @@ const Frame = forwardRef(function Frame({ children }, ref) {
   return (
     <div
       ref={ref}
-      className="z-10 w-[150px] h-[300px] md:w-[250px] md:h-[500px] rounded-[10px] bg-slate-400"
+      className="z-10 flex justify-center items-center w-[150px] h-[300px] md:w-[250px] md:h-[500px] rounded-[10px]"
     >
       {children}
     </div>
