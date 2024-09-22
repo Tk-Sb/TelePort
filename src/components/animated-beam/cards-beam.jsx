@@ -26,7 +26,7 @@ export default function CardsBeam() {
             <Frame ref={div1Ref}>
               <Iphone15Pro
                   className="w-full h-fit rounded-[30px]"
-                      src="/images/image.png"
+                      src="/images/Home-page-mobile.png"
               />
             </Frame>
             </HoverCard>
@@ -38,7 +38,7 @@ export default function CardsBeam() {
             <Frame ref={div2Ref}>
               <Iphone15Pro
                   className="w-full h-fit rounded-[30px]"
-                      src="/images/image.png"
+                      src="/images/About-us-page-mobile.png"
               />
             </Frame>
             </HoverCard>
@@ -48,7 +48,7 @@ export default function CardsBeam() {
             <Frame ref={div3Ref}>
               <Iphone15Pro
                   className="w-full h-fit rounded-[30px]"
-                      src="/images/image.png"
+                      src="/images/mall-mobile.png"
               />
             </Frame>
             </HoverCard>
@@ -60,7 +60,7 @@ export default function CardsBeam() {
             <Frame ref={div4Ref}>
               <Iphone15Pro
                   className="w-full h-fit rounded-[30px]"
-                      src="/images/image.png"
+                      src="/images/boxing-mobile.png"
               />
             </Frame>
             </HoverCard>
