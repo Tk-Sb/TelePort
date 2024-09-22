@@ -5,7 +5,7 @@ export default function Works() {
   return (
     <>
       <section className="flex">
-        <div dir="rtl" className="w-full h-fit flex flex-col md:justify-between gap-[25px] bg-[#FBFBFB] rounded-[20px] px-[15px] py-[25px] md:px-[50px] md:py-[50px] ">
+        <div dir="rtl" id="works" className="w-full h-fit flex flex-col md:justify-between gap-[25px] bg-[#FBFBFB] rounded-[20px] px-[15px] py-[25px] md:px-[50px] md:py-[50px] ">
           <div className="w-fit h-fit flex flex-col gap-[25px] ">
             <div className="w-full h-fit flex flex-col gap-[10px] ">
               <h1 dir="rtl" className="header-text ">

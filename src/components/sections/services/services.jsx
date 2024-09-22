@@ -4,7 +4,7 @@ import BoxReveal from "@/components/text-reveal";
 export default function Services() {
   return (
     <>
-      <section className="flex">
+      <section id="services" className="flex">
         <div className="w-full h-fit flex flex-col gap-[25px] bg-[#FBFBFB] rounded-[20px] px-[15px] py-[25px] md:px-[50px] md:py-[50px] ">
           <div className="w-full h-fit flex flex-col gap-[10px] ">
             <h1 dir="rtl" className="header-text ">

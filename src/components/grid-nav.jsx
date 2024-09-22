@@ -1,10 +1,21 @@
-
+'use client'
 
 export default function GridNav() {
+
+  const scrollToSection = (section) => {
+    const targetSection = document.getElementById(section)
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <div className="min-w-[437px] hidden lg:flex flex-col justify-center items-center gap-[10px] flex-wrap flex-grow bg-[#8B5CF6] rounded-[20px] p-[10px]">
       <div className="flex flex-grow w-full gap-[10px] h-[55%]"> {/*!!!*/}
-        <div className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between  flex-grow w-[30%] transform-gpu duration-300 hover:-translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px]">
+        <div 
+          className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between  flex-grow w-[30%] transform-gpu duration-300 hover:-translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px] cursor-pointer "
+          onClick={() => scrollToSection("tools")}
+        >
           <p dir="rtl" className="text-[#FFFFFF80]">
             صندوق أدواتنا 
           </p>
@@ -21,7 +32,10 @@ export default function GridNav() {
             </div>
           </div>
         </div>
-        <div className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between  flex-grow w-[50%] transform-gpu duration-300 hover:-translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px]">
+        <div 
+          className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between  flex-grow w-[50%] transform-gpu duration-300 hover:-translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px] cursor-pointer "
+          onClick={() => scrollToSection("services")}
+        >
           <p dir="rtl" className="text-[#FFFFFF80]">
             لماذا يجب عليك اختيار <span className="text-[#F2CD88]">TP</span>
             <br/>
@@ -43,7 +57,10 @@ export default function GridNav() {
         </div>
       </div>
       <div className="flex flex-grow w-full gap-[10px] h-[30%]"> {/*!!!*/}
-        <div className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between flex-grow w-[50%] transform-gpu duration-300 hover:translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px]">
+        <div 
+          className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between flex-grow w-[50%] transform-gpu duration-300 hover:translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px] cursor-pointer "
+          onClick={() => scrollToSection("contacts")}
+          >
           <p dir="rtl" className="text-[#FFFFFF80]">
             أجوبة لكل أسئلتك
           </p>
@@ -60,7 +77,10 @@ export default function GridNav() {
             </div>
           </div>
         </div>
-        <div className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between  flex-grow w-[30%] transform-gpu duration-300 hover:translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px]">
+        <div 
+          className="group shadow-xl shadow-[#fcf8f835] flex flex-col justify-between  flex-grow w-[30%] transform-gpu duration-300 hover:translate-y-1 hover:bg-[#2b2836f0] bg-[#2B2836] rounded-[10px] p-[15px] cursor-pointer "
+          onClick={() => scrollToSection("works")}
+          >
           <p dir="rtl" className="text-[#FFFFFF80]">
             ألقِ نظرة إلى أعمالنا
           </p>

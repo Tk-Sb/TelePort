@@ -54,7 +54,7 @@ export default function HoverCard({ className, children }){
         transformStyle: "preserve-3d",
         transform,
       }}
-      className={`relative z-10 ${className}`}
+      className={`relative z-10 bg-[#E7D698] ${className}`}
     >
 
       <div

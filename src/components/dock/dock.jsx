@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Dock, DockIcon } from "./dock-effect";
 
 export default function DockDemo() {
@@ -14,7 +15,9 @@ export default function DockDemo() {
           <Icons.instagram className="size-full" />
         </DockIcon>
         <DockIcon className="bg-black/10 dark:bg-white/10 p-3">
-          <Icons.whatsapp className="size-full" />
+          <Link href={"https://wa.me/963981848972"} >
+            <Icons.whatsapp className="size-full" />
+          </Link>
         </DockIcon>
       </Dock>
     </div>

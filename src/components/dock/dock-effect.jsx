@@ -79,6 +79,7 @@ function DockIcon ({
       style={{ width }}
       className="flex aspect-square cursor-pointer bg-white items-center justify-center rounded-full"
       {...props}
+      
     >
       {children}
     </motion.div>
