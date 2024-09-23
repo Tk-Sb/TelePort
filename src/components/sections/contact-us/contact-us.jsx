@@ -1,8 +1,44 @@
+'use client'
 import BoxReveal from "@/components/text-reveal";
 import GridNav from "@/components/grid-nav";
 import DockDemo from "@/components/dock/dock";
 
+import { useState } from "react";
+
+import emailjs from '@emailjs/browser';
+
 export default function ContactUs() {
+  const [name, setName] = useState('')
+  const [message, setMessage] = useState('')
+  const [email, setEmail] = useState('')
+  const [state, setState] = useState('')
+
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (!emailPattern.test(email)) {
+        setState(<p className="text-red-600">Please enter a valid Gmail address!!!</p>);
+    } else {
+      const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+
+        emailjs.sendForm(serviceId, templateId, e.target, userId)
+        .then((result) => {
+            setState(<p className="text-green-500">Email sent successfully!</p>)
+            setName('')
+            setEmail('')
+            setMessage('')
+        }, (error) => {
+            console.error('Failed to send email:', error);
+            setState(<p className="text-orange-400">Failed to send email. Please try again later.</p>);
+        });
+        }
+
+    };
+    
   return (
     <>
       <section id="contacts" className="flex gap-[25px] ">
@@ -65,23 +101,47 @@ export default function ContactUs() {
 
           </div>
           <div className="flex-grow ">
-            <div className="flex flex-col gap-[5px] ">
+            <form onSubmit={sendEmail} className="flex flex-col gap-[5px] ">
               <label className="indent-[15px] text-[#000000] ">
                 الاسم
               </label>
-              <input type="text" className="w-[300px] h-[50px] border border-[#7E7E7E] bg-transparent rounded-[15px] indent-[15px] " placeholder="الاسم" />
+              <input type="text"
+              name="from_name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required 
+              className="w-[300px] h-[50px] border border-[#7E7E7E] bg-transparent rounded-[15px] indent-[15px] " 
+              placeholder="الاسم" 
+              />
               <label className="indent-[15px] text-[#000000] ">
                 البريد الإلكتروني
               </label>
-              <input type="text" className="w-[300px] h-[50px] border border-[#7E7E7E] bg-transparent rounded-[15px] indent-[15px] " placeholder="you@company.com" />
+              <input 
+              type="text" 
+              name="from_contact"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required 
+              className="w-[300px] h-[50px] border border-[#7E7E7E] bg-transparent rounded-[15px] indent-[15px] " 
+              placeholder="you@company.com" 
+              />
               <label className="indent-[15px] text-[#000000] ">
                 الرسالة
               </label>
-              <textarea type="text" className="w-[300px] h-[150px] resize-none border border-[#7E7E7E] bg-transparent rounded-[15px] indent-[15px] " placeholder="اترك لنا رسالة..." />
-              <button className="md:text-[18px] w-[300px] h-[50px] flex justify-center items-center rounded-[15px] border-[2px] border-[#8B5CF6] bg-[#8B5CF6] font-medium text-white transition-all duration-200 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:border-gray-600 hover:shadow-[4px_4px_0px_#6643B6] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none">
-                أرسل لنا رسالة
+              <textarea 
+              type="text" 
+              name="message" 
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required 
+              className="w-[300px] h-[150px] resize-none border border-[#7E7E7E] bg-transparent rounded-[15px] indent-[15px] " 
+              placeholder="اترك لنا رسالة..." 
+              />
+              {state}
+              <button type="submit" disabled={false} className="md:text-[18px] w-[300px] h-[50px] flex justify-center items-center rounded-[15px] border-[2px] border-[#8B5CF6] bg-[#8B5CF6] font-medium text-white transition-all duration-200 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:border-gray-600 hover:shadow-[4px_4px_0px_#6643B6] active:translate-x-[0px] active:translate-y-[0px] active:shadow-none">
+                تواصل معنا
               </button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
