@@ -1,9 +1,11 @@
+
 import BoxReveal from "@/components/text-reveal";
 import GridNav from "@/components/grid-nav";
 import DockDemo from "@/components/dock/dock";
-import EmailForm from "./email-from";
+import EmailForm from "./email-form";
 
 export default function ContactUs() {
+  
   return (
     <>
       <section id="contacts" className="flex gap-[25px] ">
@@ -62,6 +64,7 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
+
 
           <div className="h-[2px] md:w-[2px] md:h-auto bg-[#7E7E7E] "></div>
 
