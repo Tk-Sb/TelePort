@@ -32,6 +32,7 @@ export default function EmailForm() {
           setEmail('')
           setMessage('')
       }, (error) => {
+          console.log(error)
           setState(<h1>NOT Success</h1>);
       });
     }
