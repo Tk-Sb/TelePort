@@ -64,12 +64,11 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-          <div className="h-[2px] md:w-[2px] md:h-auto bg-[#7E7E7E] ">
 
-          </div>
-          <div className="flex-grow ">
-            <EmailForm></EmailForm>
-          </div>
+
+          <div className="h-[2px] md:w-[2px] md:h-auto bg-[#7E7E7E] "></div>
+
+          <EmailForm></EmailForm>
         </div>
       </section>
     </>
