@@ -1,5 +1,5 @@
 'use client'
-// pages/_app.js
+
 import { useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
