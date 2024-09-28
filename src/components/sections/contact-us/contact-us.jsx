@@ -1,6 +1,4 @@
-
 import BoxReveal from "@/components/text-reveal";
-import GridNav from "@/components/grid-nav";
 import DockDemo from "@/components/dock/dock";
 import EmailForm from "./email-form";
 
@@ -9,8 +7,7 @@ export default function ContactUs() {
   return (
     <>
       <section id="contacts" className="flex gap-[25px] ">
-        <GridNav></GridNav>
-        <div dir="rtl" className="w-full h-fit lg:max-w-[784px] flex flex-col md:flex-row md:justify-between gap-[25px] bg-[#FBFBFB] rounded-[20px] px-[15px] py-[25px] md:px-[50px] md:py-[50px] ">
+        <div dir="rtl" className="w-full h-fit flex flex-col md:flex-row md:justify-start gap-[25px] bg-[#FBFBFB] rounded-[20px] px-[15px] py-[25px] md:px-[50px] md:py-[50px] ">
           <div className="flex flex-col gap-[25px] ">
             <div className="w-fit h-fit flex flex-col gap-[25px] ">
               <div className="w-full h-fit flex flex-col gap-[10px] ">
@@ -37,7 +34,7 @@ export default function ContactUs() {
                 </BoxReveal>
               </h2>
             
-              <div className="w-fit h-fit flex flex-row-reverse items-end gap-[5px] mr-[150px] ">
+              <div className="w-full h-fit flex flex-row-reverse items-end gap-[5px] ">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_1371_116)">
                     <path d="M18.6797 4.6875C20.2699 5.11427 21.7198 5.95178 22.884 7.11599C24.0482 8.2802 24.8857 9.73014 25.3125 11.3203" stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

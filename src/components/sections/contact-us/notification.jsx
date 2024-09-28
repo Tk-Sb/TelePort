@@ -10,7 +10,7 @@ const notificationVariants = {
   exit: { opacity: 0, y: 50, transition: { duration: 0.5 } },
 };
 
-export default function NotificationPopup ({ id, title, subtitle, onClose, number }) {
+export default function NotificationPopup ({ id, title, subtitle, onClose }) {
   return (
     <motion.div
       className="notification-outer bg-white rounded-2xl p-2 mb-2 w-80 border border-[#8B5CF6] shadow-lg relative mr-4"
@@ -19,8 +19,8 @@ export default function NotificationPopup ({ id, title, subtitle, onClose, numbe
       exit="exit"
       variants={notificationVariants}
     >
-      <div className="absolute -top-2 -right-2 w-5 h-5 bg-teal-500 text-white rounded-full flex items-center justify-center text-xs">
-        {number}
+      <div className="absolute -top-2 -right-2 w-5 h-5 bg-[#8B5CF6] text-white rounded-full flex items-center justify-center text-xs">
+        
       </div>
       <div className="notification-inner bg-white rounded-2xl p-4 border border-[#8B5CF6] relative">
         <button
@@ -44,43 +44,43 @@ export default function NotificationPopup ({ id, title, subtitle, onClose, numbe
   );
 };
 
-function Notification () {
-  const [notifications, setNotifications] = useState([]);
+// function Notification () {
+//   const [notifications, setNotifications] = useState([]);
 
-  const addNotification = () => {
-    const id = Math.random().toString(36).substr(2, 9);
-    setNotifications([...notifications, { id, message: 'شكرا على رسالتك' }]);
-  };
+//   const addNotification = () => {
+//     const id = Math.random().toString(36).substr(2, 9);
+//     setNotifications([...notifications, { id, message: 'شكرا على رسالتك' }]);
+//   };
 
-  const removeNotification = (id) => {
-    setNotifications(notifications.filter((notification) => notification.id !== id));
-  };
+//   const removeNotification = (id) => {
+//     setNotifications(notifications.filter((notification) => notification.id !== id));
+//   };
 
-  return (
-    <div className="relative h-52 w-full">
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <button
-          onClick={addNotification}
-          className="px-4 py-2 bg-slate-900 text-white rounded-lg shadow-md pointer-events-auto hover:bg-slate-800"
-        >
-          Add Notification
-        </button>
-      </div>
-      <div className="fixed bottom-4 right-4 flex flex-col items-end z-50">
-        <AnimatePresence>
-          {notifications.map((notification, index) => (
-            <motion.div key={notification.id} layout>
-              <NotificationPopup
-                id={notification.id}
-                title={`تم إرسال الرسالة`}
-                subtitle={notification.message}
-                onClose={removeNotification}
-                number={index + 1}
-              />
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </div>
-    </div>
-  );
-};
+//   return (
+//     <div className="relative h-52 w-full">
+//       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+//         <button
+//           onClick={addNotification}
+//           className="px-4 py-2 bg-slate-900 text-white rounded-lg shadow-md pointer-events-auto hover:bg-slate-800"
+//         >
+//           Add Notification
+//         </button>
+//       </div>
+//       <div className="fixed bottom-4 right-4 flex flex-col items-end z-50">
+//         <AnimatePresence>
+//           {notifications.map((notification, index) => (
+//             <motion.div key={notification.id} layout>
+//               <NotificationPopup
+//                 id={notification.id}
+//                 title={`تم إرسال الرسالة`}
+//                 subtitle={notification.message}
+//                 onClose={removeNotification}
+//                 number={index + 1}
+//               />
+//             </motion.div>
+//           ))}
+//         </AnimatePresence>
+//       </div>
+//     </div>
+//   );
+// };

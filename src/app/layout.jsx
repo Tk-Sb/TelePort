@@ -1,6 +1,5 @@
 import { Rubik } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const rubik = Rubik({ subsets: ["arabic", "latin"], weight: ["400", "700", "800"] })
 
