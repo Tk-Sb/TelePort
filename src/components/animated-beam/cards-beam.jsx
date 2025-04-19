@@ -3,8 +3,6 @@
 import CustomBeamEffect from "@/components/animated-beam/custom-beam-effect";
 import { forwardRef, useRef } from "react";
 import HoverCard from "../hoverCard-3d";
-
-import Image from 'next/image';
 import Iphone15Pro from "../iphone-15-pro";
 
 export default function CardsBeam() {
